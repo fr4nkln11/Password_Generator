@@ -1,26 +1,31 @@
 import random as r
+import string
 
-ALPHABET = list('abcdefghijklmnopqrstuvwxyz')
-ALPHABET_UPPER = list('ABCDEFGHIJKLMNOPQRSTUVWXYZ')
-NUMBERS = list('1234567890')
-SYMBOLS = list(r"@#$%&-+=()*\"':;!?/.,{}][<>")
+
+def letter():
+    return r.choice(string.ascii_letters)
+
+
+def loCase():
+    return r.choice(string.ascii_lowercase)
+
+
+def upCase():
+    return r.choice(string.ascii_uppercase)
+
+
+def digit():
+    return r.choice(string.digits)
+
+
+def symbol():
+    return r.choice(string.punctuation)
+
 
 def all():
-	randomCharList = [r.choice(ALPHABET), r.choice(NUMBERS), r.choice(SYMBOLS), r.choice(ALPHABET_UPPER)]
-	return r.choice(randomCharList)
-	
-def letter():
-	return r.choice(ALPHABET)
-	
-def letterUpper():
-	return r.choice(ALPHABET_UPPER)
-	
-def number():
-	return r.choice(NUMBERS)
-	
-def symbol():
-	return r.choice(SYMBOLS)
-		
-		
+    randomCharList = [letter(), digit(), symbol()]
+    return r.choice(randomCharList)
+
+
 if __name__ == "__main__":
-	print("This module was created by FR4NKL1N_1K3H")
+    print("\nThis module was created by fr4nkl1n-1k3h\n")
