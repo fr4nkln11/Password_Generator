@@ -7,7 +7,6 @@ SYMBOLS = list(r"@#$%&-+=()*\"':;!?/.,{}][<>")
 
 def all():
 	randomCharList = [r.choice(ALPHABET), r.choice(NUMBERS), r.choice(SYMBOLS), r.choice(ALPHABET_UPPER)]
-		
 	return r.choice(randomCharList)
 	
 def letter():
