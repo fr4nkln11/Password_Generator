@@ -1,3 +1,5 @@
+[![forthebadge made-with-python](http://ForTheBadge.com/images/badges/made-with-python.svg)](https://www.python.org/)]
+
 # Password_Generator
 A simple password generator made with the help of a module I created "randomchar".
 The code has no GUI for now but I'm still working on it
@@ -15,5 +17,5 @@ To a character list which is later shuffled and joined to produce a final string
 The program now uses a modified version of the randomchar module
 In this version passwords are created using the `randomchar.printable()` function.
 
-see https://github.com/fr4nkl1n-1k3h/randomchar for more information on how it works
+[[Check the repo](https://github.com/fr4nkl1n-1k3h/randomchar)] for more information on how it works
 
